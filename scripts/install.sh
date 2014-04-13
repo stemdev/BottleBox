@@ -1,12 +1,15 @@
 # Install script to provision server
 
-# Shared Directory
 curUser=$(whoami)
 if [[ $curUser=="vagrant" ]]
 then
+    # The next two lines set up vagrant to always log you in to the shared
+    # directory so that your work is easily visible/accessible from the host.
     cd /vagrant
     echo "cd /vagrant" | sudo tee -a ~vagrant/.profile
 else
+    # If you are actually deploying this on a server somewhere, then here is
+    # where you should set up the server directories
     echo "Not implemented"
 fi
 
