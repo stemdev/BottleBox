@@ -1,0 +1,6 @@
+*.swp
+.vagrant/
+*.pyc
+db.*
+nohup.out
+bottle.py
