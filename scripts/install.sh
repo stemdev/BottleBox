@@ -1,3 +1,6 @@
+#!/bin/bash
+
+
 # Install script to provision server
 
 curUser=$(whoami)
